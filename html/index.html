@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/svg" href="asset/Logo.svg" >
+    <title>Dev Development</title>
+</head>
+<body>
+    <!-- Unordered List -->
+    <h4>Groceries</h4>
+    <ul>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>coffee</li>
+        <ul>
+            <li>coffee beans</li>
+            <li>creamer</li>
+            <li>sugar</li>
+        </ul>
+    </ul>
+
+    <!-- Ordered List -->
+    <h4>To do list</h4>
+    <ol>
+        <li>eat breakfast</li>
+        <li>go to class</li>
+        <li>walk dog</li>
+        <li>work</li>
+    </ol>
+
+    <!-- Description List -->
+    <h4>Mythical??</h4>
+    <dl style="background-color: black;">
+        <li style="color: aliceblue;">dragon</li>
+        <dd><li>dragon</li></dd>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cum.</dd>
+        <dt>dragon</dt>
+    </dl>
+
+    <h3>Store Hours</h3>
+
+    <table border="1" style="background-color: black;" >
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center" style="background-color: aliceblue;">
+            <td>close</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+    
+    <br>
+    <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color: lightblue; border-radius: 10px;">click me</button>
+    
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Goodbye";
+            if (innerHTML == "Goodbye"){
+                document.getElementById("greeting").innerHTML = "Hello";
+            }
+        }
+    </script>
+
+    <h1>This is <i>h1</i> heading</h1>
+    <h2>This is <u>h2</u> heading</h2>
+    <h3>This is <del>h3</del> heading</h3>
+    <h4>This is <big>h4</big> heading</h4>
+    <h5>This is <small>h5</small> heading</h5>
+    <h6>This is <sub>h6</sub> heading</h6>
+    <p>this is <sup>test</sup></p>
+    <p>this is <tt>test</tt></p>
+    <p>this is <mark style="background-color: aqua;">test</mark></p>
+    <p>this is <b>test</b></p>
+    <hr>
+    <br>
+    <a href="http://www.google.com/" target="_blank" title="google">
+        click me
+    </a>
+    <a href="lyrics.html">
+        <h3>Song Lylic รถไฟบนฟ้า</h3>
+    </a>
+    <br>
+    <a href="form.html">
+        <button style="border-radius: 3px;">
+            Form
+        </button>
+    </a>
+    <br>
+    <a href="web.html">Web</a>
+    <hr>
+    <h2>Contact</h2>
+    <a href="mailto:test@fake.com">email me</a>
+    <!-- it use to send this email to outlook -->
+    <br>
+    <p>
+        <span style="background-color: tomato;">
+            This is span title
+        </span>
+        
+    </p>
+    <p>
+        <div style="background-color: cyan;">
+            This is a div title
+        </div>
+    </p>
+    <!-- This is test comment-->
+</body>
+</html>
