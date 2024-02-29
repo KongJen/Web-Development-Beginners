@@ -1,0 +1,12 @@
+body{
+    background-color: #545454;
+}
+#p1{
+    color: rgb(102,222,255);
+}
+#p2{
+    color: #59ff5f;
+}
+#p3{
+    color: hsl(332, 48%, 53%);
+}
