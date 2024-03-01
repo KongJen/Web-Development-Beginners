@@ -5,10 +5,22 @@ body{
 h1{
     text-shadow: 3px 5px 5px red, -5px -5px 5px #59b4ff;
 }
-div{
+#div2{
     border: 2px solid;
     height: 50px;
     overflow: auto;
+}
+#div1{
+    background-color: rgb(247, 131, 131);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+#span1{
+    background-color: #59b4ff;
+    width: 100px;
+    height: 100px;
+    display: inline;
 }
 p{
     margin: auto;
