@@ -1,11 +1,34 @@
+@font-face {
+    font-family: Teko-Medium;
+    src: url(../font/Teko-Medium.ttf);
+}
+
+@font-face {
+    font-family: Jacquarda-Bastarda-9;
+    src: url(../font/JacquardaBastarda9-Regular.ttf);
+}
+
 body{
     background-color: black;
 }
 h1{
     color: aliceblue;
+    font-family: Teko-Medium, verdana, arial;
+    border-style: solid;
+    border-width: 4px;
+    border-color: hsl(297, 68%, 35%);
+    border-radius: 20px;
 }
 p{
     color: aliceblue;
+    font-family: Jacquarda-Bastarda-9, "lucida console", "courier new";
+    /*this is % font size */
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 3px solid red;
+    border-top: 3px dotted yellow;
+    border-left: 3px solid green;
 } 
 #p1{
     color: red;
@@ -17,11 +40,11 @@ p{
     color: yellow;
 }
 #p4{
-    color: green;
+    color: hsl(118, 100%, 25%);
 }
 .odd{
     color: red;
 }
 .even{
-    color: blue;
+    color: #2600ff;
 }

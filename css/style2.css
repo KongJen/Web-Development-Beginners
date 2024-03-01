@@ -1,5 +1,40 @@
 body{
-    background-color: #545454;
+    background-color: white;
+    margin: 100px;
+}
+h1{
+    text-shadow: 3px 5px 5px red, -5px -5px 5px #59b4ff;
+}
+div{
+    border: 2px solid;
+    height: 50px;
+    overflow: auto;
+}
+p{
+    margin: auto;
+}
+#img{
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+.box{
+    border: 5px solid;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: #d2d2d2;
+    box-shadow: 3px 3px 5px;
+    margin: auto ;
+    float: right;
+}
+#box2{
+    background-color: aquamarine;
+    margin-left: 180px;
 }
 #p1{
     color: rgb(102,222,255);
