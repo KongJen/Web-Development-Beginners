@@ -11,17 +11,22 @@
 body{
     background-color: black;
 }
-h1{
-    color: aliceblue;
-    font-family: Teko-Medium, verdana, arial;
+#head{
     border-style: solid;
     border-width: 4px;
     border-color: hsl(297, 68%, 35%);
     border-radius: 20px;
 }
+h1{
+    color: aliceblue;
+    font-family: Teko-Medium, verdana, arial;
+}
 p{
     color: aliceblue;
     font-family: Jacquarda-Bastarda-9, "lucida console", "courier new";
+} 
+#p1{
+    color: red;
     /*this is % font size */
     font-size: 1.5em;
     font-weight: bold;
@@ -29,9 +34,6 @@ p{
     border-bottom: 3px solid red;
     border-top: 3px dotted yellow;
     border-left: 3px solid green;
-} 
-#p1{
-    color: red;
 }
 #p2{
     color: orange;
@@ -47,4 +49,23 @@ p{
 }
 .even{
     color: #2600ff;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(205, 133, 0);
+    border-radius: 5px;
 }

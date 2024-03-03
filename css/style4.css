@@ -5,8 +5,22 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+div{
+    color: aliceblue;
+}
 h1{
     color: aliceblue;
+}
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color: rgb(77, 42, 0);
+}
+p::selection{
+    color: black;
+    background-color: aquamarine;
 }
 p{
     color: aliceblue;
@@ -17,4 +31,64 @@ p{
 
 #container > p{
     background-color: rgb(59, 59, 0);
+}
+
+#container ~ p{
+    background-color: rgb(1, 0, 59);
+}
+
+#container + p{
+    background-color: rgb(0, 37, 59);
+}
+
+a:link{
+    color: aqua;
+}
+
+a:hover{
+    color: blueviolet;
+    font-size: 1.1em;
+}
+a:active{
+    font-size: 1.1em;
+    color: aquamarine;
+}
+a:visited{
+    color: white;
+}
+
+li:hover{
+    background-color: rgb(113, 113, 0);
+}
+
+li:not(:hover){
+    background-color: rgb(61, 61, 61);
+}
+
+li:nth-child(){
+    background-color: antiquewhite;
+}
+/* window+; use emoji */
+#Test li::before{
+    content: "😢✅";
+}
+#Test li::marker{
+    content: "✔️";
+    color: hsl(120, 20%, 66%);
+    font-size: 1.2em;
+}
+#test1::after{
+    content: "❤️";
+}
+#test2::after{
+    content: "💕";
+}
+#greeting p{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+    color: black;
+}
+#greeting:hover p{
+    display: block;
 }
