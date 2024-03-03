@@ -21,5 +21,13 @@
     width: 200px;
     height: 200px;
     background-color: aqua;
-    margin-top: 20px;
+    /* reletive fixed absolute sticky static */
+    position: fixed;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 98, 0);
+    /* reletive fixed rgb(255, 98, 0)lute sticky static */
+    position: absolute;
 }
