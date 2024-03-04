@@ -99,3 +99,16 @@ document.getElementById("conversion3").textContent = `Value z is ${z} ,Type of z
 //--Constants--//
 
 // const isn't let because it variable can't be change//
+
+const PI = 3.14159;
+let radius;
+let circumference;
+
+// radius = window.prompt('Enter the radius of the circle');
+
+document.getElementById("mySubmit2").onclick = function(){
+    radius = document.getElementById("myText2").value;
+    radius = Number(radius);
+    circumference =2 * PI * radius;
+    document.getElementById("myh3").textContent = circumference + "cm.";
+}
