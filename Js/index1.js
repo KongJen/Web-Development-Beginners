@@ -67,6 +67,7 @@ let username;
 
 document.getElementById("mySubmit").onclick = function(){
     username = document.getElementById("myText").value;
+    alert(`Hello ${username}.`);
     document.getElementById("myh2").textContent = `Hello ${username}.`;
 }
 
@@ -96,3 +97,5 @@ document.getElementById("conversion3").textContent = `Value z is ${z} ,Type of z
 
 //----------------------------------------------------------------------------------------------//
 //--Constants--//
+
+// const isn't let because it variable can't be change//
