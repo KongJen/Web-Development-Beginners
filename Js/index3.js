@@ -101,7 +101,8 @@ let extension1 = email.slice(email.indexOf("@"));
 //----------------------------------------------------------------------------------------------//
 // METHOD CHAINING //
 
-let username2 = window.prompt("Enter your username")
+let username2 = " ";
+// let username2 = window.prompt("Enter your username") // delete comment to use this section.
 
 // ------ NO METHOD CHAINING -------
 
@@ -119,7 +120,26 @@ username2 = letter1 + extraChars;
 
 username2 = username2.trim().charAt(0).toUpperCase() + username2.trim().slice(1).toLowerCase();
 
-console.log(username2);
+// console.log(username2);
 
+//----------------------------------------------------------------------------------------------//
+// LOGICAL OPERATIONS //
 
+// it have AND = &&, OR = ||, NOT = !
 
+const temp = 250;
+
+if(temp <= 0 || temp > 30){
+    // console.log("The weather is BAD");
+}
+else{
+    // console.log("The weather is GOOD");
+}
+
+//----------------------------------------------------------------------------------------------//
+// LOGICAL OPERATIONS //
+
+// == compare values equal
+// === compare values & datatype equal
+// != compare values inequal
+// !== compare values & datatype inequal
