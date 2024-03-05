@@ -41,10 +41,69 @@ z = Math.cos(x);
 z = Math.tan(x);
 z = Math.abs(x);
 z = Math.sign(x);
-let max = Math.max(x, y, z);
-let min = Math.min(x, y, z);
+// let max = Math.max(x, y, z);
+// let min = Math.min(x, y, z);
 
 // console.log(max);
 
 //----------------------------------------------------------------------------------------------//
 // RANDOM NUMBER GENERATOR //
+
+// const min = 50;
+// const max =100;
+// let randomNum = Math.floor(Math.random() * (max-min)) + min;
+// console.log(randomNum);
+
+const myButton1 = document.getElementById("myButton1");
+const lable1 = document.getElementById("lable1");
+const lable2 = document.getElementById("lable2");
+const lable3 = document.getElementById("lable3");
+const resetBtn1 = document.getElementById("resetBtn1");
+const min = 1;
+const max = 6;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+myButton1.onclick = function(){
+    randomNum1 = Math.floor(Math.random() * max) + min;
+    randomNum2 = Math.floor(Math.random() * max) + min;
+    randomNum3 = Math.floor(Math.random() * max) + min;
+    lable1.textContent = randomNum1;
+    lable2.textContent = randomNum2;
+    lable3.textContent = randomNum3;
+}
+resetBtn1.onclick = function(){
+    lable1.textContent = 0;
+    lable2.textContent = 0;
+    lable3.textContent = 0;
+}
+
+//----------------------------------------------------------------------------------------------//
+// IF STATEMENTs //
+
+const myText1 = document.getElementById("myText1");
+const mySubmit1 = document.getElementById("mySubmit1");
+const resultElement1 = document.getElementById("resultElement1");
+let age = 0;
+
+mySubmit1.onclick = function(){
+
+    age = myText1.value;
+    age = Number(age);
+    if(age >= 100){
+        resultElement1.textContent = `You are TOO OLD to enter this site.`;
+    }
+    else if(age >= 18){
+        resultElement1.textContent = `You are old enough to enter this site.`;
+    }
+    else if(age < 0){
+        resultElement1.textContent = `Your age can't be below 0.`;
+    }
+    else{
+        resultElement1.textContent = `You must be 18+ to enter this site.`;
+    }
+}
+
+//----------------------------------------------------------------------------------------------//
+// Checked property //
