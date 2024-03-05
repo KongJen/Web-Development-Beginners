@@ -143,3 +143,58 @@ else{
 // === compare values & datatype equal
 // != compare values inequal
 // !== compare values & datatype inequal
+
+const PI = 3.14;
+
+if (PI === "3.14") {
+    // console.log("That is PI");
+}
+else{
+    // console.log("That is not PI");
+}
+
+//----------------------------------------------------------------------------------------------//
+// WHILE LOOP //
+
+let username3;
+
+// while(username3 === "" || username3 === null) {
+//     username3 = window.prompt(`Enter your name`);
+// }
+
+// do {
+//     username3 = window.prompt(`Enter your name`);
+// } while(username3 === "" || username3 === null)
+
+// console.log(`Hello ${username3}`);
+
+let loggedIn = false;
+let password;
+
+// while (!loggedIn) {
+//     username3 = window.prompt(`Enter your username`);
+//     password = window.prompt(`Enter your password`);
+
+//     if (username3 === "myUsername" && password === "myPassword") {
+//         loggedIn = true;
+//         console.log("You are logged in!");
+//     }
+//     else{
+//         console.log("Invalid credentials! Please try again");
+//     }
+// } // if use do while. You can set loggedIn = True
+
+//----------------------------------------------------------------------------------------------//
+// FOR LOOP //
+
+for (let i = 1; i <= 20; i++) {
+    if (i == 13) {
+        break;
+    }
+    else{
+        // console.log(i);
+    }
+}
+
+//----------------------------------------------------------------------------------------------//
+// NUMBER GUESSING GAME //
