@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
     <title>index3</title>
 </head>
 <body>
@@ -29,6 +30,21 @@
             <li>FUNCTION</li>
             <li>VARIABLE SCOPE</li>
         </ul>
+        <div>
+            <form action="">
+                <h2>Temperature conversion</h2>
+                <input type="number" id="textBoxTemp" value="0"><br>
+
+                <input type="radio" id="toFahrenheit" name="unit">
+                <label for="toFahrenheit">Celsius ➡️ Farenheit</label><br>
+
+                <input type="radio" id="toCelsius" name="unit">
+                <label for="toCelsius">Farenheit ➡️ Celsius</label><br>
+
+                <button type="button" onclick="convert()">submit</button>
+                <p id="resultTemp">Select a unit</p>
+            </form>
+        </div>
     </div>
     
 

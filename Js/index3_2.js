@@ -32,7 +32,7 @@ function isValidEmail(email) {
     return email.includes("@") ? true : false;
 }
 
-console.log(isValidEmail("Konggmail.com"));
+// console.log(isValidEmail("Konggmail.com"));
 
 //----------------------------------------------------------------------------------------------//
 // VARIABLE SCOPE //
@@ -50,3 +50,32 @@ function function2() {
     let x = 2; // local
     // console.log(x);
 }
+
+//----------------------------------------------------------------------------------------------//
+// TEMPERATURE CONVERSION PROGRAM //
+
+const textBoxTemp = document.getElementById("textBoxTemp");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+const resultTemp = document.getElementById("resultTemp");
+let temp1;
+
+function convert() {
+    
+    if (toFahrenheit.checked) {
+        temp1 = Number(textBoxTemp.value);
+        temp1 = temp1 * 9 /5 +32;
+        resultTemp.textContent = temp1.toFixed(1) + "°F";
+    }
+    else if (toCelsius.checked) {
+        temp1 = Number(textBoxTemp.value);
+        temp1 = (temp1 - 32) * (5 / 9);
+        resultTemp.textContent = temp1.toFixed(1) + "°C";
+    }
+    else{
+        resultTemp.textContent = "Select a unit";
+    }
+}
+
+//----------------------------------------------------------------------------------------------//
+// ARRAY //
