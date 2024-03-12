@@ -110,3 +110,20 @@ for (let fruit of fruits) {
 
 //----------------------------------------------------------------------------------------------//
 // SPEAD OPERATOR //
+
+let numbers = [1, 2, 3, 4, 5];
+// let maximum = Math.max(numbers); //NaN
+let maximum = Math.max(...numbers);
+
+console.log(maximum);
+
+let username = "Kong Jen";
+let letters = [...username].join("-");
+
+console.log(letters);
+
+let vegetables = ["carrot", "celery", "potatoes"];
+
+ let foods = [...fruits, ...vegetables];
+
+ console.log(foods);
