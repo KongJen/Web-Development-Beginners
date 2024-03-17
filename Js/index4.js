@@ -62,3 +62,6 @@ function rollDice() {
     diceImages.innerHTML = images.join('');
 
 }
+
+//----------------------------------------------------------------------------------------------//
+// RANDOM PASSWORD GENERATOR //
