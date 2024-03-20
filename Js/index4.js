@@ -94,7 +94,7 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
         
     }
     
-    return '';
+    return password;
 }
 
 const passwordLenght = 12;
@@ -110,4 +110,26 @@ const password = generatePassword(passwordLenght,
     includeSymbols);
 
 console.log(`Generated password: ${password}`);
+
+//----------------------------------------------------------------------------------------------//
+// CALLBACK //
+
+//hello(wait);
+
+function hello(callback) {
+    console.log("Hello!");
+    callback();
+}
+
+function wait() {
+    console.log("Wait!");
+}
+
+function leave() {
+    console.log("Leave!");
+}
+
+function goodbye() {
+    console.log("Goodbye!");
+}
 
